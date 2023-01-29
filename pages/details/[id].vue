@@ -4,7 +4,7 @@ export {};
 
 <script setup lang="ts">
 const route = useRoute();
-const { id } = route.query;
+const { id } = route.params;
 const { data: article } = await useFetch(`/api/blogs/${id}`);
 </script>
 
